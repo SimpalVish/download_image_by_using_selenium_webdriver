@@ -27,8 +27,8 @@ drp=Select(element)
 drp.select_by_value("asian")
 time.sleep(2)
 
-# element=driver.find_element(By.ID,"reload-button").click()
-# time.sleep(15)
+element=driver.find_element(By.ID,"reload-button").click()
+time.sleep(15)
 
 driver.execute_script("window.scrollBy(0,400)","")
 time.sleep(15)
@@ -59,10 +59,10 @@ for i in range(n):
     image_download()
 print("Done")
 
-# driver.find_element(By.ID,"oldButtonDownload").click()
-# time.sleep(15)
+driver.find_element(By.ID,"oldButtonDownload").click()
+time.sleep(15)
 
-# driver.find_element(By.ID,"download-button").click()
+driver.find_element(By.ID,"download-button").click()
 
 print(driver.title)
 driver.close()
